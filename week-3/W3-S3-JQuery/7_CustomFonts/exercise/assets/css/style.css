@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: "Playwrite De Grund" , cursive;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: "Playwrite De Grund" , cursive;
+}
+
+/* Main Content Styles */
+main {
+    margin: 20px 0;
+    font-family: "Playwrite DE Grund", cursive;
+  
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+h2 {
+    font-family: "Playwrite De Grund" , cursive;
+    color: #333333;
+}
+
+/* Paragraph Styles */
+p {
+    font-family: font-family: "Playwrite De Grund" , cursive;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+p.highlight {
+    background-col "Playwrite De Grund" , cursive;
+    color: #000000;
+    padding: 10px;
+    border-left: 5px solid #007acc;
+}
+
+
+/* Footer Styles */
+footer p{
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Playwrite De Grund" , cursive;
+}

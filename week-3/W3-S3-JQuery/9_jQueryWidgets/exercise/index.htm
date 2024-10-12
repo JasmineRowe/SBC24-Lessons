@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Widgets Demo</title>
+
+    <!-- jQuery and jQuery UI CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .draggable-box {
+            width: 150px;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: move;
+        }
+
+        .datepicker {
+            margin-bottom: 20px;
+        }
+
+        .autocomplete {
+            margin-bottom: 20px;
+        }
+
+        
+        #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+        #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+
+
+      
+        #resizable { width: 150px; height: 150px; padding: 0.5em; }
+         #resizable h3 { text-align: center; margin: 0; }
+  
+    </style>
+</head>
+
+<body>
+
+    <h2>jQuery UI Widgets Demo</h2>
+
+    <!-- Drag and Drop Box -->
+
+    
+    <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Resizable</h3>
+      </div>
+       
+    <div class="draggable-box">
+        Drag Me
+    </div>
+
+    <!-- Date Picker Input -->
+    <p>Select a date: <input type="text" id="datepicker" class="datepicker"></p>
+
+    <!-- Autocomplete Input -->
+    <p>Start typing a fruit: <input type="text" id="autocomplete" class="autocomplete"></p>
+
+    <p>Start typing a Bootcamper's name: <input type="text" id="autocomplete" class="autocomplete"></p>
+
+    <!--DRAG AND DROP Input-->
+
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me to my target</p>
+      </div>
+       
+      <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+      </div>
+      
+
+    
+       
+
+    <script>
+        $(document).ready(function () {
+
+            $( "#resizable" ).resizable();
+  
+            // Draggable widget
+            $(".draggable-box").draggable();
+
+            // Datepicker widget
+            $("#datepicker").datepicker();
+
+            // Autocomplete widget
+            var studentnames = [
+                "Joe", "Matt", "Sathana", "Leo", "Noah", "Abi", "Chari", "Susie",
+                "Olha", "Vitor", "Eoghan", "Jasmine", "Paul", "Yann", "David", "Matt J", "Ben"
+            ];
+            $("#autocomplete").autocomplete({
+                source: "studentnames"
+            });
+            
+
+        
+            $( "#draggable" ).draggable();
+            $( "#droppable" ).droppable({
+            drop: function( event, ui ) {
+            $( this )
+            .addClass( "ui-state-highlight" )
+            .find( "p" )
+            .html( "Dropped!" );
+            }})
+    
+
+            var availableFruits = [
+                "Apple", "Banana", "Cherry", "Date", "Grape", "Lemon", "Mango", "Orange",
+                "Peach", "Pineapple", "Strawberry", "Watermelon"
+            ];
+            $("#autocomplete").autocomplete({
+                source: "availableFruits"
+            })
+        });
+
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/* Custom Styles for overriding Bootstrap colors */
+
+/* Header Custom Colors */
+
+
+.bg-primary  {
+    background-color: #3ecf76 !important;
+    /* Indigo */
+    color: #FFD700 !important;
+    /* Gold */
+}
+
+.bg-light {  background-color: #4B0082 !important;
+    /* Indigo */
+    color: #FFD700 !important;
+}
+    
+/* Footer Custom Colors */
+.bg-secondary {
+    background-color: #0b9748 !important;
+    /* SeaGreen */
+    color: #c2ce1a !important;
+    /* White */
+    font-size: x-large
+}
+
+.border-danger {
+    color:#00ff55;
+    border-width: 20vmin;
+}
+
+/* Button Custom Colors */
+.btn-primary {
+    background-color: #a200ff !important;
+    /* OrangeRed */
+    border-color: #FF4500 !important;
+    border-width:3vmin;
+}
+
+.btn-primary:hover {
+    background-color: #00ff55 !important;
+    /* OrangeRed */
+    border-color: #ffee00 !important;
+    
+
+}
+
+.btn-secondary {
+    background-color: #c626cc !important;
+    /* SlateBlue */
+    border-color: #cdc55a !important;
+    border-radius: 50%;
+    border-width:3vmin;
+}
+
+.btn-danger {
+    background-color: #2114dc !important;
+    /* Crimson */
+    border-color: #DC143C !important;
+    border-radius: 20%;
+    border-width:3vmin;
+}
+
+.btn-success {
+    background-color: #32CD32 !important;
+    /* LimeGreen */
+    border-color: #b332cd !important;
+    border-radius: 40%;
+    border-width:3vmin;
+}
+
+.text-dark {
+    color: rgb(188, 215, 55) !important;
+    /* Black */
+}
