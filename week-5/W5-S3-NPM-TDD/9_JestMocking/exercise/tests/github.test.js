@@ -3,6 +3,8 @@ const axios = require("axios");
 const { getUserRepos } = require("../github");
 
 // TODO: what's the difference between jest.mock and jest.spyOn?
+// Mock replaces real objects and simulates behaviour where spy observes
+
 // Mock Axios
 jest.mock("axios");
 
